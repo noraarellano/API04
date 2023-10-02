@@ -32,11 +32,6 @@ app.get('/socios/v1/peliculas', (req, res)=>{
             peliculas: peliculas
         })
     }
-    //2. Mostrarlas con un estado y mensaje
-    //3. Si existen, mostrar estado y mensaje
-    //En formato JSON
-    //Mostrar mensajes de estado del servidor 
-    //Todas las categorias
 })
 
 app.get('/socios/v1/peliculas/:id', (req, res)=>{
@@ -167,9 +162,6 @@ app.delete('/socios/v1/peliculas/:id', (req, res)=>{
             mensaje:"Película no encontrada"
         })
     }
-     //Eliminar una sola categoria del servidor
-    // res.send('Eliminar una categoria por su id');
-
 })
 
 app.listen(puerto,()=>{
